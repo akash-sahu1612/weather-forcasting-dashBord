@@ -1,10 +1,5 @@
 
-// let aqiButton=document.querySelector("#seeMore");
-// let aqi=document.querySelector("#mid-fourth-para");
 
-// aqi.addEventListener("keypress",function(event){
-// aqi.innerHTML="Dust & Dander <br> Extreme";
-// });
 
 const aqiButton = document.getElementById('aqiButton');
 const aqiText = document.getElementById('aqi');
