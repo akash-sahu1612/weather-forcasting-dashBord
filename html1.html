@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcasting Dashbord</title>
+    <link rel="stylesheet" href="cs1.css" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            padding: 2rem;
+            justify-content: space-evenly;
+        }
+
+        .sidebar {
+            width: 3rem;
+            height: 85vh;
+            background-color: #121212;
+            border-radius: 10px;
+        }
+
+       #sun{
+        height: 6rem;
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+
+        <div class="sidebar">
+            <div class="logo" class="nav-option">
+            </div>
+            <div class="weather" class="nav-option">
+                <img src="assets/weather.png" />
+                <a href="#" style="text-decoration: none; color: white;font-size: 0.6rem;">Weather</a>
+            </div>
+            <div class="cities" class="nav-option">
+                <img src="assets/cities.png" />
+                <a href="#" style="text-decoration: none;color: white;font-size: 0.6rem;">Cities</a>
+            </div>
+            <div class="map" class="nav-option">
+                <img src="assets/map.png" />
+                <a href="#" style="text-decoration: none;color: white;font-size: 0.6rem;">Maps</a>
+            </div>
+            <div class="settings" class="nav-option">
+
+                <img src="assets/settings.png" />
+                <a href="#" style="text-decoration: none;color: white;font-size: 0.6rem;">Settings</a>
+            </div>
+        </div>
+
+
+
+        <div class="mid">
+            <div class="mid-first">
+                <input type="text" placeholder="Search for Cities" />
+            </div>
+
+            <div class="mid-second">
+                <div>
+                    <p>Ranchi <br>Chance of rain: 0%</p>
+                    <p class="chance"></p>
+                    <p>31° </p>
+                </div>
+                <img src="assets/sun_2595773.png" id="sun" />
+            </div>
+
+            <div class="mid-third">
+
+                <div class="today">
+                    <p> NIGHT'S FORCAST</p>
+                    <img src="assets/thunder_6092940.png" id="thunder" />
+                    <h3 style="color:white">18°</h3>
+                </div>
+                <div class="tomorrow">
+                    <p>TOMORROW'S FORCAST</p>
+                    <img src="assets/rainbow_9806367.png" id="rainbow" />
+                    <h3 style="color:white">23°</h3>
+                </div>
+            </div>
+
+
+            <div class="mid-fourth">
+                <h4>
+                    <p>AIR CONDITION</p>
+                    <button id="aqiButton">SEE MORE</button>
+                </h4>
+                <h3>
+                    <img src="assets/air-quality.png" />
+                    <p id="aqi">258 AQI Dangerous</p>
+                </h3>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <h5>7-DAY FORECAST </h5>
+            <div class="cont">
+                <p>Today</p>
+                <p class="incont">
+                    <img src="assets/sun_2595773.png" alt="">Sunny
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            <div class="cont">
+                <p>Tuesday</p>
+                <p class="incont">
+                    <img src="assets/sun_2595773.png" alt="">Sunny
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            <div class="cont">
+                <p>Wednesday</p>
+                <p class="incont">
+                    <img src="assets/sun_2595773.png" alt="">Sunny
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            <div class="cont">
+                <p>Thursday</p>
+                <p class="incont">
+                    <img src="assets/rainbow_9806367.png" alt="">Cloudy
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            <div class="cont">
+                <p>Friday</p>
+                <p class="incont">
+                    <img src="assets/rainbow_9806367.png" alt="">Cloudy
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            <div class="cont">
+                <p>Saturday</p>
+                <p class="incont">
+                    <img src="assets/rainbow_9806367.png" alt="">Cloudy
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            <div class="cont">
+                <p>Sunday</p>
+                <p class="incont">
+                    <img src="assets/thunder_6092940.png" alt="">Rainy
+                  
+                </p>
+                <p>36/22</p>
+            </div>
+            
+            <script src="app.js"></script>
+</body>
+
+</html>
